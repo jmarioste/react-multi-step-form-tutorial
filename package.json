@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.4",
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "embla-carousel-react": "^8.0.0-rc07",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
+    "formik": "^2.4.1",
     "next": "13.4.4",
     "postcss": "8.4.24",
     "react": "18.2.0",
