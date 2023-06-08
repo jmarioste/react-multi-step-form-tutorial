@@ -23,6 +23,7 @@ const SignUpForm = ({ steps }: Props) => {
           password: "",
           firstName: "",
           lastName: "",
+          interests: "",
         }}
       >
         <Form>

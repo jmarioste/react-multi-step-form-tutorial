@@ -2,12 +2,13 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
 import { FromStepProps } from "./FormStepProps";
+import FormikTextField from "../formik/FormikTextField";
 
 const Page2 = (props: FromStepProps) => {
   return (
     <div className="flex flex-col gap-2 w-[400px]">
-      <TextField label="First name"></TextField>
-      <TextField label="Last name"></TextField>
+      <FormikTextField name="firstName" label="First name"></FormikTextField>
+      <FormikTextField name="lastName" label="Last name"></FormikTextField>
       <div className="flex">
         <Button onClick={props.onPrevious} className="flex-grow">
           Back
