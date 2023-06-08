@@ -1,5 +1,5 @@
 "use client";
-import { Button, TextField } from "@mui/material";
+import { Button } from "@mui/material";
 import React from "react";
 import { FromStepProps } from "./FormStepProps";
 import FormikTextField from "../formik/FormikTextField";
@@ -15,7 +15,7 @@ const Page2 = (props: FromStepProps) => {
         </Button>
         <Button
           variant="contained"
-          onClick={props.onSubmit}
+          onClick={props.onNext}
           className="flex-grow"
         >
           Next

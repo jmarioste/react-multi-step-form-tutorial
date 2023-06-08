@@ -28,7 +28,7 @@ const SignUpForm = ({ steps }: Props) => {
       >
         <Form>
           <Step
-            onSubmit={() => {
+            onNext={() => {
               if (pageIndex < steps.length) {
                 const nextPage = pageIndex + 1;
                 router.push(`/signup?page=${nextPage}`);

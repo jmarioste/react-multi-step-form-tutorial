@@ -9,7 +9,7 @@ const Page1 = (props: FromStepProps) => {
     <div className="flex flex-col gap-2 w-[400px]">
       <FormikTextField name="email" label="Email" />
       <FormikTextField name="password" label="Password" type="password" />
-      <Button variant="contained" onClick={props.onSubmit}>
+      <Button variant="contained" onClick={props.onNext}>
         Next
       </Button>
     </div>

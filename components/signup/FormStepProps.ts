@@ -1,4 +1,4 @@
 export type FromStepProps = {
-  onSubmit(): void;
+  onNext(): void;
   onPrevious(): void;
 };
