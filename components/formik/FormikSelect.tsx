@@ -1,3 +1,4 @@
+"use client";
 import {
   FormControl,
   Select,
@@ -5,7 +6,7 @@ import {
   InputLabel,
   FormHelperText,
 } from "@mui/material";
-import { useField, useFormikContext } from "formik";
+import { useField } from "formik";
 import React from "react";
 
 type Props = { name: string; id: string; helperText?: string } & SelectProps;
@@ -18,7 +19,6 @@ const FormikSelect: React.FC<Props> = ({
   ...props
 }) => {
   const [field, meta] = useField(name);
-  const { setFieldValue } = useFormikContext();
 
   const error = Boolean(meta.touched && meta.error);
   const showHelperText = error || !!helperText;
@@ -27,16 +27,7 @@ const FormikSelect: React.FC<Props> = ({
   return (
     <FormControl fullWidth error={error} size={size}>
       <InputLabel id={id + "-label"}>{props.label}</InputLabel>
-      <Select
-        {...props}
-        name={name}
-        id={id}
-        labelId={id + "-label"}
-        onChange={(e) => {
-          setFieldValue(name, e.target.value);
-        }}
-        value={field.value}
-      >
+      <Select {...props} {...field} id={id} labelId={id + "-label"}>
         {children}
       </Select>
       {showHelperText && (

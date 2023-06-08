@@ -1,10 +1,11 @@
+// components/signup/Page2.tsx
 "use client";
 import { Button } from "@mui/material";
 import React from "react";
-import { FromStepProps } from "./FormStepProps";
+import { FormStepComponentType } from "./FormStepProps";
 import FormikTextField from "../formik/FormikTextField";
 
-const Page2 = (props: FromStepProps) => {
+const Page2: FormStepComponentType = (props) => {
   return (
     <div className="flex flex-col gap-2 w-[400px]">
       <FormikTextField name="firstName" label="First name"></FormikTextField>

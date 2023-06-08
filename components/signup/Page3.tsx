@@ -1,16 +1,9 @@
 "use client";
-import {
-  Button,
-  FormControl,
-  InputLabel,
-  MenuItem,
-  Select,
-} from "@mui/material";
-import React from "react";
-import { FromStepProps } from "./FormStepProps";
+import { Button, MenuItem } from "@mui/material";
+import { FormStepComponentType } from "./FormStepProps";
 import FormikSelect from "../formik/FormikSelect";
 
-const Page3 = (props: FromStepProps) => {
+const Page3: FormStepComponentType = (props) => {
   return (
     <div className="flex flex-col gap-2 w-[400px]">
       <FormikSelect
@@ -29,7 +22,6 @@ const Page3 = (props: FromStepProps) => {
           Back
         </Button>
         <Button type="submit" variant="contained">
-          {" "}
           Create an Account
         </Button>
       </div>

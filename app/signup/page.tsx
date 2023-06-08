@@ -7,7 +7,7 @@ import React from "react";
 const SignupPage = () => {
   return (
     <div className="grid h-screen place-items-center">
-      <SignUpForm steps={[Page1, Page2, Page3]}></SignUpForm>
+      <SignUpForm steps={[Page1, Page2, Page3]} />
     </div>
   );
 };
